@@ -452,8 +452,7 @@
                     <div class="instructions">
                         <h3>ขั้นตอนการตั้งค่า LINE Messaging API</h3>
                         <ol>
-                            <li>ไปที่ <a href="https://developers.line.biz/console/" target="_blank">LINE Developers
-                                    Console</a></li>
+                            <li>ไปที่ <a href="https://developers.line.biz/console/" target="_blank">LINE Developers Console</a></li>
                             <li>เลือก Channel ของคุณ (ประเภท Messaging API)</li>
                             <li>ไปที่แท็บ "Messaging API"</li>
                             <li>คัดลอก "Channel Access Token" วางในช่องด้านล่าง</li>
@@ -466,14 +465,13 @@
                                 </ol>
                             </li>
                         </ol>
-
+                        
                         <div class="redirect-uri-box">
                             <strong>Redirect URI สำหรับ LINE Login:</strong><br>
                             <span id="redirectUriDisplay"></span>
                         </div>
-
-                        <p><strong>คำแนะนำ:</strong> คัดลอก URL ด้านบนไปใส่ใน LINE Developer Console → Channel → LINE
-                            Login → Redirect URLs</p>
+                        
+                        <p><strong>คำแนะนำ:</strong> คัดลอก URL ด้านบนไปใส่ใน LINE Developer Console → Channel → LINE Login → Redirect URLs</p>
                     </div>
 
                     <div class="config-section">
@@ -487,8 +485,7 @@
                         <label for="lineUserId">User ID ของคุณ:</label>
                         <div style="display: flex; gap: 10px;">
                             <input type="text" id="lineUserId" placeholder="ใส่ User ID ของคุณ" style="flex: 1;">
-                            <button onclick="getUserIdWithLineLogin()" style="width: auto; white-space: nowrap;">ดึง
-                                User ID อัตโนมัติ</button>
+                            <button onclick="getUserIdWithLineLogin()" style="width: auto; white-space: nowrap;">ดึง User ID อัตโนมัติ</button>
                         </div>
                     </div>
 
@@ -529,12 +526,11 @@
         <div class="review-modal-content">
             <h2>ล็อคอินด้วย LINE</h2>
             <p>เพื่อดึง User ID อัตโนมัติ กรุณาล็อคอินด้วยบัญชี LINE ของคุณ</p>
-
+            
             <div id="manualMethod">
                 <h3>วิธีดึง User ID แบบ Manual</h3>
                 <ol style="text-align: left;">
-                    <li>ไปที่ <a href="https://developers.line.biz/console/" target="_blank">LINE Developers Console</a>
-                    </li>
+                    <li>ไปที่ <a href="https://developers.line.biz/console/" target="_blank">LINE Developers Console</a></li>
                     <li>เลือก Channel ของคุณ</li>
                     <li>ไปที่แท็บ "Messaging API"</li>
                     <li>เลื่อนลงไปที่ส่วน "Webhook"</li>
@@ -544,7 +540,7 @@
                     <li>คัดลอก User ID นั้นมาใส่ในช่องด้านบน</li>
                 </ol>
             </div>
-
+            
             <button onclick="closeLineLoginModal()" style="background: #ff3333; margin-top: 10px;">ปิด</button>
         </div>
     </div>
@@ -1249,7 +1245,7 @@
                     showPage("home");
                 }
             });
-
+            
             document.getElementById("lineLoginModal").addEventListener("click", function (e) {
                 if (e.target === this) {
                     closeLineLoginModal();
